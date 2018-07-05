@@ -589,6 +589,766 @@ input, select, textarea, button {
         top: 0;
         right: 0; }
 
+.employees {
+  position: relative; }
+  .employees .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .employees .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .employees .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .employees .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .employees .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .employees .sec-2 {
+    padding: 40px 0px;
+    height: 45vh; }
+    .employees .sec-2 article {
+      text-align: center;
+      padding: 0px 15px; }
+      .employees .sec-2 article p {
+        margin-top: 38px;
+        display: block;
+        font-size: 20px;
+        color: #505050;
+        font-family: "nunitobold", Arial, sans-serif;
+        margin-bottom: 5px; }
+      .employees .sec-2 article a {
+        font-size: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #ff5225;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #ff5225;
+        word-break: break-word; }
+
+.whatsnew {
+  position: relative; }
+  .whatsnew .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .whatsnew .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .whatsnew .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .whatsnew .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .whatsnew .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .whatsnew .sec-2 {
+    padding: 40px 0px; }
+    .whatsnew .sec-2 .wn-list > li {
+      padding: 30px 0px 45px;
+      border-bottom: 1px solid #d4d4d4; }
+      .whatsnew .sec-2 .wn-list > li div > aside {
+        max-width: 280px;
+        height: 185px;
+        width: 100%;
+        float: left;
+        margin-right: 45px; }
+        .whatsnew .sec-2 .wn-list > li div > aside img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .whatsnew .sec-2 .wn-list > li div > article h4 {
+        font-family: "nunitobold", Arial, sans-serif;
+        font-size: 24px;
+        color: #ff5225; }
+      .whatsnew .sec-2 .wn-list > li div > article span {
+        display: block;
+        color: #a6a6a6;
+        font-size: 15px;
+        margin-bottom: 10px; }
+      .whatsnew .sec-2 .wn-list > li div > article h6 {
+        margin-bottom: 40px; }
+        .whatsnew .sec-2 .wn-list > li div > article h6 a {
+          color: #505050;
+          font-size: 18px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          text-decoration: none; }
+      .whatsnew .sec-2 .wn-list > li div > article > a {
+        text-decoration: none;
+        font-family: "nunitoregular", Arial, sans-serif;
+        color: #ff5225;
+        font-size: 20px;
+        padding-bottom: 0px;
+        border-bottom: 1px solid #ff5225;
+        text-transform: uppercase; }
+    .whatsnew .sec-2 .wn-list > li:first-child {
+      padding-top: 0px; }
+    .whatsnew .sec-2 article.ltst-nws {
+      padding: 48px 94px; }
+      .whatsnew .sec-2 article.ltst-nws > .box {
+        background: #f8f8f8;
+        padding-right: 20px; }
+        .whatsnew .sec-2 article.ltst-nws > .box aside {
+          height: 230px;
+          width: 100%;
+          max-width: 280px;
+          float: left;
+          margin-right: 45px; }
+        .whatsnew .sec-2 article.ltst-nws > .box article {
+          margin-top: 65px; }
+          .whatsnew .sec-2 article.ltst-nws > .box article h4 {
+            font-size: 24px;
+            color: #ff5225;
+            font-family: "nunitobold", Arial, sans-serif;
+            margin-bottom: 10px; }
+          .whatsnew .sec-2 article.ltst-nws > .box article p {
+            font-family: "nunitoregular", Arial, sans-serif;
+            font-size: 20px;
+            color: #505050; }
+        .whatsnew .sec-2 article.ltst-nws > .box .badge-ltst {
+          text-align: center;
+          max-width: 197px;
+          background: #ff5225;
+          width: 100%;
+          position: absolute;
+          padding: 9px 0px;
+          top: 0;
+          left: 280px; }
+          .whatsnew .sec-2 article.ltst-nws > .box .badge-ltst span {
+            font-family: "nunitobold", Arial, sans-serif;
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase; }
+        .whatsnew .sec-2 article.ltst-nws > .box .next-btn {
+          position: absolute;
+          border: 1px solid #ff5225;
+          border-radius: 10px;
+          padding: 10px 17px;
+          top: 11px;
+          right: 18px; }
+          .whatsnew .sec-2 article.ltst-nws > .box .next-btn a {
+            text-transform: uppercase;
+            color: #ff5225;
+            font-size: 16px;
+            text-decoration: none;
+            font-family: "nunitobold", Arial, sans-serif; }
+
+.whatsnew_single {
+  position: relative; }
+  .whatsnew_single .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .whatsnew_single .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .whatsnew_single .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .whatsnew_single .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .whatsnew_single .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .whatsnew_single .sec-2 {
+    padding: 40px 0px; }
+    .whatsnew_single .sec-2 article {
+      padding: 0px 15px;
+      border-bottom: 1px solid #d4d4d4; }
+      .whatsnew_single .sec-2 article .head_news {
+        margin-bottom: 40px; }
+        .whatsnew_single .sec-2 article .head_news div.left-head-news {
+          float: left; }
+          .whatsnew_single .sec-2 article .head_news div.left-head-news h4 {
+            font-family: "nunitobold", Arial, sans-serif;
+            font-size: 36px;
+            color: #ff5225; }
+          .whatsnew_single .sec-2 article .head_news div.left-head-news span {
+            color: #a6a6a6;
+            font-size: 18px; }
+        .whatsnew_single .sec-2 article .head_news div.right-head-news {
+          float: right;
+          margin-top: 12px; }
+          .whatsnew_single .sec-2 article .head_news div.right-head-news > ul li {
+            width: 36px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: text-top;
+            margin: 0px 3px; }
+          .whatsnew_single .sec-2 article .head_news div.right-head-news > ul li:first-child {
+            text-align: center; }
+            .whatsnew_single .sec-2 article .head_news div.right-head-news > ul li:first-child h6 {
+              font-family: "nunitobold", Arial, sans-serif;
+              font-size: 12px;
+              margin-bottom: -7px;
+              padding-top: 5px; }
+            .whatsnew_single .sec-2 article .head_news div.right-head-news > ul li:first-child span {
+              font-size: 11px;
+              font-family: "nunitoregular", Arial, sans-serif; }
+      .whatsnew_single .sec-2 article .body_news img {
+        margin-top: 30px;
+        margin-bottom: 40px; }
+      .whatsnew_single .sec-2 article .body_news p {
+        margin-bottom: 40px;
+        font-family: "nunitoregular", Arial, sans-serif;
+        font-size: 20px;
+        color: #505050; }
+      .whatsnew_single .sec-2 article .body_news p:first-of-type {
+        margin-bottom: 0px; }
+    .whatsnew_single .sec-2 .footer_news {
+      padding: 40px 15px 20px; }
+      .whatsnew_single .sec-2 .footer_news a {
+        font-family: "nunitoregular", Arial, sans-serif;
+        color: #ff5225;
+        font-size: 18px;
+        text-decoration: none; }
+
+.faq_page {
+  position: relative; }
+  .faq_page .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .faq_page .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .faq_page .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .faq_page .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .faq_page .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .faq_page .sec-2 {
+    padding: 40px 0px 80px; }
+    .faq_page .sec-2 .tab {
+      position: relative;
+      margin-bottom: 1px;
+      width: 100%;
+      overflow: hidden; }
+    .faq_page .sec-2 input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      z-index: -1; }
+    .faq_page .sec-2 label {
+      position: relative;
+      display: block;
+      background: #fff;
+      padding: 20px 0px;
+      padding-left: 15px;
+      padding-right: 45px;
+      cursor: pointer;
+      margin: 0px;
+      border-bottom: 1px solid #d4d4d4;
+      font-family: "nunitobold", Arial, sans-serif;
+      font-size: 20px;
+      color: #505050; }
+    .faq_page .sec-2 .tab-content {
+      max-height: 0;
+      overflow: hidden;
+      background: #ebebeb;
+      -webkit-transition: max-height .35s;
+      -o-transition: max-height .35s;
+      transition: max-height .35s; }
+    .faq_page .sec-2 .tab-content p {
+      margin: 1em;
+      font-family: "nunitoregular", Arial, sans-serif;
+      font-size: 18px;
+      color: #505050; }
+    .faq_page .sec-2 input:checked ~ .tab-content {
+      max-height: 100em; }
+    .faq_page .sec-2 input:checked + label {
+      color: #ff5225; }
+    .faq_page .sec-2 label::after {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+      display: block;
+      text-align: center;
+      -webkit-transition: all .35s;
+      -o-transition: all .35s;
+      transition: all .35s; }
+    .faq_page .sec-2 input[type=checkbox] + label::after {
+      content: "+"; }
+    .faq_page .sec-2 input[type=checkbox]:checked + label::after {
+      content: "-"; }
+    .faq_page .sec-2 input[type=radio]:checked + label::after {
+      content: "-"; }
+    .faq_page .sec-2 input[type=radio]:checked + label {
+      color: #ff5225; }
+    .faq_page .sec-2 input[type=radio]:focus + label {
+      color: #ff5225; }
+
+.contact_client {
+  position: relative; }
+  .contact_client .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .contact_client .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .contact_client .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .contact_client .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .contact_client .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .contact_client .sec-2 {
+    padding: 40px 0px; }
+    .contact_client .sec-2 .cntct_dvider > article {
+      width: 49%;
+      float: left;
+      padding-right: 40px; }
+      .contact_client .sec-2 .cntct_dvider > article h3 {
+        font-family: "nunitobold", Arial, sans-serif;
+        font-size: 20px;
+        color: #703577;
+        margin-bottom: 20px; }
+      .contact_client .sec-2 .cntct_dvider > article .map {
+        margin-bottom: 20px; }
+        .contact_client .sec-2 .cntct_dvider > article .map iframe {
+          width: 100%; }
+      .contact_client .sec-2 .cntct_dvider > article > ul li {
+        width: 49%;
+        display: inline-block;
+        padding: 0px 15px;
+        margin-bottom: 30px;
+        vertical-align: text-top; }
+        .contact_client .sec-2 .cntct_dvider > article > ul li > h4 {
+          font-size: 18px;
+          font-family: "nunitobold", Arial, sans-serif;
+          color: #703577;
+          margin-bottom: 10px; }
+        .contact_client .sec-2 .cntct_dvider > article > ul li > p, .contact_client .sec-2 .cntct_dvider > article > ul li a {
+          font-size: 16px;
+          color: #505050;
+          font-family: "nunitoregular", Arial, sans-serif;
+          margin-bottom: 7px; }
+        .contact_client .sec-2 .cntct_dvider > article > ul li > a {
+          text-decoration: none; }
+    .contact_client .sec-2 .cntct_dvider > aside {
+      width: 49%;
+      float: right;
+      padding: 0px 15px; }
+      .contact_client .sec-2 .cntct_dvider > aside h5 {
+        color: #505050;
+        font-size: 18px;
+        margin-bottom: 25px; }
+      .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li {
+        position: relative;
+        margin-bottom: 15px;
+        padding-left: 168px; }
+        .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li input[type="text"], .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li input[type="email"] {
+          height: 42px;
+          border: 1px solid #e1e1e1;
+          padding-left: 15px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          width: 100%;
+          font-size: 17px;
+          color: #505050; }
+        .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li span {
+          position: absolute;
+          font-size: 18px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          left: 0;
+          top: 8px; }
+        .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li textarea {
+          border: 1px solid #e1e1e1;
+          padding-left: 15px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          width: 100%;
+          font-size: 17px;
+          color: #505050;
+          height: 200px;
+          resize: none; }
+      .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li:last-child a {
+        display: block;
+        max-width: 148px;
+        width: 100%;
+        text-align: center;
+        color: #505050;
+        font-family: "nunitobold", Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-decoration: none;
+        border: 2px solid #703577;
+        border-radius: 10px;
+        padding: 8px 0px; }
+
+.contact {
+  position: relative; }
+  .contact .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .contact .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .contact .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .contact .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .contact .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .contact .sec-2 {
+    padding: 40px 0px; }
+    .contact .sec-2 .cntct_dvider > article {
+      width: 49%;
+      float: left;
+      padding-right: 40px; }
+      .contact .sec-2 .cntct_dvider > article h3 {
+        font-size: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #703577;
+        margin-bottom: 20px; }
+      .contact .sec-2 .cntct_dvider > article .map iframe {
+        width: 100%; }
+    .contact .sec-2 .cntct_dvider > aside {
+      width: 49%;
+      float: right; }
+      .contact .sec-2 .cntct_dvider > aside > ul {
+        margin-top: 41px; }
+        .contact .sec-2 .cntct_dvider > aside > ul li {
+          width: 49%;
+          display: inline-block;
+          padding: 0px 10px;
+          vertical-align: text-top;
+          margin-bottom: 30px; }
+          .contact .sec-2 .cntct_dvider > aside > ul li h4 {
+            font-family: "nunitobold", Arial, sans-serif;
+            font-size: 18px;
+            color: #703577;
+            margin-bottom: 15px; }
+          .contact .sec-2 .cntct_dvider > aside > ul li p {
+            font-family: "nunitoregular", Arial, sans-serif;
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 28px;
+            color: #505050; }
+          .contact .sec-2 .cntct_dvider > aside > ul li a {
+            font-family: "nunitoregular", Arial, sans-serif;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #505050; }
+
+.mv-values {
+  position: relative; }
+  .mv-values .sec-1 {
+    height: 416px;
+    background-image: url(../images/banner-cmpny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative; }
+    .mv-values .sec-1 > .hero {
+      position: absolute;
+      top: 180px;
+      max-width: 1024px;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, 0);
+      width: 100%;
+      padding: 0px 15px; }
+      .mv-values .sec-1 > .hero h3 {
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 2px; }
+      .mv-values .sec-1 > .hero h3::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        width: 75px;
+        height: 5px;
+        background: #ff5e35;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .mv-values .sec-1 > .hero p {
+        font-family: "nunito_sansextralight";
+        font-size: 20px;
+        color: #fff; }
+  .mv-values .sec-2 {
+    padding: 40px 0px; }
+    .mv-values .sec-2 article.mission {
+      margin-bottom: 80px; }
+      .mv-values .sec-2 article.mission > h3 {
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #505050;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 46px;
+        padding-bottom: 19px;
+        position: relative; }
+      .mv-values .sec-2 article.mission > h3::after {
+        position: absolute;
+        content: '';
+        width: 75px;
+        height: 5px;
+        background: #ff5225;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0); }
+      .mv-values .sec-2 article.mission > ul > li {
+        width: 33%;
+        display: inline-block;
+        padding: 0px 15px;
+        vertical-align: text-top;
+        text-align: center; }
+        .mv-values .sec-2 article.mission > ul > li h4 {
+          font-family: "nunitobold", Arial, sans-serif;
+          font-size: 24px;
+          color: #505050;
+          margin-bottom: 10px; }
+        .mv-values .sec-2 article.mission > ul > li p {
+          font-size: 20px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          color: #505050; }
+    .mv-values .sec-2 .vision {
+      padding-bottom: 35px;
+      margin-bottom: 50px; }
+      .mv-values .sec-2 .vision > h3 {
+        font-family: "nunitobold", Arial, sans-serif;
+        color: #505050;
+        font-size: 30px;
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 15px; }
+      .mv-values .sec-2 .vision > h3::after {
+        position: absolute;
+        content: '';
+        width: 75px;
+        height: 5px;
+        background: #ff5225;
+        bottom: 0;
+        left: 0; }
+      .mv-values .sec-2 .vision > article {
+        padding: 30px 30px 30px 0px;
+        max-width: 725px;
+        width: 100%;
+        background: #fff; }
+        .mv-values .sec-2 .vision > article > p {
+          font-size: 20px;
+          color: #505050;
+          font-family: "nunitoregular", Arial, sans-serif;
+          margin-bottom: 30px; }
+        .mv-values .sec-2 .vision > article > p:last-of-type {
+          margin-bottom: 0px; }
+      .mv-values .sec-2 .vision > aside {
+        width: 653px;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 440px; }
+        .mv-values .sec-2 .vision > aside img {
+          height: 100%;
+          object-fit: cover; }
+    .mv-values .sec-2 .values > h3 {
+      font-family: "nunitobold", Arial, sans-serif;
+      color: #505050;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      position: relative; }
+    .mv-values .sec-2 .values > h3::after {
+      position: absolute;
+      content: '';
+      width: 75px;
+      height: 5px;
+      background: #ff5225;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0); }
+    .mv-values .sec-2 .values .tab {
+      float: left;
+      width: 29%; }
+    .mv-values .sec-2 .values .tab button {
+      display: block;
+      background-color: inherit;
+      color: black;
+      padding: 15px 15px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 20px;
+      font-family: "nunitobold", Arial, sans-serif;
+      text-align: right;
+      padding-right: 40px; }
+    .mv-values .sec-2 .values .tab button.active {
+      color: #703577; }
+    .mv-values .sec-2 .values .tabcontent {
+      float: left;
+      padding: 0px 12px;
+      border: 1px solid #ccc;
+      width: 70%;
+      border-left: none;
+      padding-right: 0px;
+      border-radius: 10px;
+      overflow: hidden; }
+      .mv-values .sec-2 .values .tabcontent figure {
+        float: right;
+        padding-left: 30px;
+        height: 330px;
+        width: 50%; }
+        .mv-values .sec-2 .values .tabcontent figure img {
+          height: 100%;
+          object-fit: cover; }
+      .mv-values .sec-2 .values .tabcontent figcaption {
+        padding-top: 15px; }
+        .mv-values .sec-2 .values .tabcontent figcaption > p {
+          font-size: 16px;
+          color: #505050;
+          font-family: "nunitoregular", Arial, sans-serif;
+          line-height: 28px; }
+
 footer {
   padding: 20px 35px; }
   footer > ul {

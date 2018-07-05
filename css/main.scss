@@ -348,6 +348,497 @@ background-color: $white;
 
 
 
+.employees {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+    .sec-2 { padding: 40px 0px; height: 45vh;
+
+        article { text-align:center; padding: 0px 15px;
+            p { margin-top: 38px; display: block; font-size: 20px; color: $gray; font-family: $fonthead; margin-bottom: 5px;}
+
+            a { font-size: 20px; font-family: $fonthead; color: $orange; text-decoration: none; padding-bottom: 3px; border-bottom: 1px solid $orange; word-break: break-word;}
+        }
+
+    }
+
+}
+
+
+
+
+.whatsnew {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+    .sec-2 { padding: 40px 0px;
+        .wn-list {
+            > li { padding: 30px 0px 45px; border-bottom: 1px solid #d4d4d4;
+                div{
+                    > aside { max-width: 280px; height: 185px; width: 100%; float: left; margin-right: 45px;
+
+                        img { width: 100%; height: 100%; object-fit: cover;}
+                    }
+
+                    > article { 
+                        h4 { font-family: $fonthead; font-size: 24px; color: $orange; }
+
+                        span { display: block; color: #a6a6a6; font-size: 15px; margin-bottom: 10px;}
+
+                        h6 { margin-bottom: 40px;
+                            a { color: $gray; font-size: 18px; font-family: $fontnav; text-decoration: none;}
+                        }
+
+                        > a { text-decoration: none; font-family: $fontnav; color: $orange; font-size: 20px; padding-bottom: 0px; border-bottom: 1px solid $orange; text-transform: uppercase;}
+                    }
+                }
+            }
+
+            > li:first-child { padding-top: 0px;}
+        }
+
+        article.ltst-nws { padding: 48px 94px;
+            > .box { background: #f8f8f8; padding-right: 20px;
+
+                aside { height: 230px; width: 100%; max-width: 280px; float: left; margin-right: 45px;}
+
+                article { margin-top: 65px;
+                    h4 { font-size: 24px; color: $orange; font-family: $fonthead; margin-bottom: 10px;}
+
+                    p { font-family: $fontnav; font-size: 20px; color: $gray;}
+                }
+
+                .badge-ltst {  text-align: center; max-width: 197px; background: $orange; width: 100%;  position: absolute; padding: 9px 0px; top: 0; left: 280px;
+                    span { font-family: $fonthead; font-size: 20px; color: $white; text-transform: uppercase;}
+                }
+
+                .next-btn { position: absolute; border: 1px solid $orange; border-radius: 10px; padding: 10px 17px; top: 11px; right: 18px;
+                    a { text-transform: uppercase; color: $orange; font-size: 16px; text-decoration: none; font-family: $fonthead; }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+.whatsnew_single {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+
+    .sec-2 { padding: 40px 0px;
+
+        article { padding: 0px 15px; border-bottom: 1px solid #d4d4d4;
+            .head_news { margin-bottom: 40px;
+
+                div.left-head-news{ float: left;
+
+                    h4 { font-family: $fonthead; font-size: 36px; color: $orange;}
+
+                    span { color: #a6a6a6; font-size: 18px;}
+                }
+
+                div.right-head-news{ float: right; margin-top: 12px;
+                    > ul {
+                        li { width: 36px; height: 32px; display: inline-block; vertical-align: text-top; margin: 0px 3px;}
+
+                        li:first-child { text-align: center;
+                            h6 { font-family: $fonthead; font-size: 12px; margin-bottom: -7px; padding-top: 5px;}
+                            span { font-size: 11px; font-family: $fontnav;}
+                        }
+                    }
+                }
+
+                
+            }
+
+            .body_news{
+
+                img { margin-top: 30px; margin-bottom: 40px;}
+
+                p{ margin-bottom: 40px; font-family: $fontnav; font-size: 20px; color: $gray;}
+
+                p:first-of-type{ margin-bottom: 0px; }
+            }
+        }
+
+        .footer_news { padding: 40px 15px 20px;
+
+            a { font-family: $fontnav; color: $orange; font-size: 18px; text-decoration: none;}
+        }
+    }
+}
+
+
+
+
+.faq_page {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+    .sec-2 { padding: 40px 0px 80px;
+
+        .tab {
+          position: relative;
+          margin-bottom: 1px;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        input[type="checkbox"] {
+          position: absolute;
+          opacity: 0;
+          z-index: -1;
+        }
+
+        label {
+          position: relative;
+          display: block;
+          background: $white;
+          padding: 20px 0px;
+          padding-left: 15px;
+          padding-right: 45px;
+          cursor: pointer;
+          margin: 0px;
+          border-bottom: 1px solid #d4d4d4;
+          font-family: $fonthead;
+          font-size: 20px;
+          color: $gray;
+        }
+
+        .tab-content {
+          max-height: 0;
+          overflow: hidden;
+          background: #ebebeb;
+          -webkit-transition: max-height .35s;
+          -o-transition: max-height .35s;
+          transition: max-height .35s;
+        }
+
+        .tab-content p {
+          margin: 1em;
+          font-family: $fontnav;
+          font-size: 18px;
+          color: $gray;
+        }
+
+        input:checked ~ .tab-content {
+          max-height: 100em;
+        }
+
+        input:checked + label { color: $orange;}
+
+        label::after {
+          position: absolute;
+          right: 15px;
+          top: 20px;
+          display: block;
+          text-align: center;
+          -webkit-transition: all .35s;
+          -o-transition: all .35s;
+          transition: all .35s;
+        }
+
+        input[type=checkbox] + label::after {
+        content: "+";
+        }
+
+        input[type=checkbox]:checked + label::after {
+          content: "-";
+        }
+        
+      
+        input[type=radio]:checked + label::after {
+          content: "-";
+        }
+
+        input[type=radio]:checked + label{ color: $orange;}
+
+        input[type=radio]:focus +label { color: $orange;}
+
+    }
+
+}
+
+
+
+
+
+.contact_client {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+    .sec-2 { padding: 40px 0px;
+
+        .cntct_dvider { 
+
+            > article { width: 49%; float: left; padding-right: 40px;
+
+                h3 { font-family: $fonthead; font-size: 20px; color: #703577; margin-bottom: 20px;}
+
+                .map { margin-bottom: 20px;
+                    iframe { width: 100%;}
+                }
+                > ul {
+                    li { width: 49%; display: inline-block; padding: 0px 15px; margin-bottom: 30px; vertical-align: text-top;
+                        > h4 { font-size: 18px; font-family: $fonthead; color: #703577; margin-bottom: 10px;}
+
+                        > p, a { font-size: 16px; color: $gray; font-family: $fontnav; margin-bottom: 7px;}
+
+                        >a { text-decoration: none;}
+                    }
+                }
+            }
+
+            > aside { width: 49%; float: right; padding: 0px 15px;
+
+                h5 { color: $gray; font-size: 18px; margin-bottom: 25px;}
+
+                .form-hldr {
+                    > ul{
+                        li { position:relative; margin-bottom: 15px; padding-left: 168px;
+
+                            input[type="text"], input[type="email"] {
+                                height: 42px; border: 1px solid #e1e1e1; padding-left: 15px; font-family: $fontnav; width: 100%; font-size: 17px; color: $gray;
+                            }
+
+                            span { position: absolute; font-size: 18px; font-family: $fontnav; left: 0; top: 8px;}
+
+                            textarea {  border: 1px solid #e1e1e1; padding-left: 15px; font-family: $fontnav; width: 100%; font-size: 17px; color: $gray; height: 200px; resize: none;}
+
+                        }
+
+                        li:last-child { 
+                            a { display: block; max-width: 148px; width: 100%;  text-align: center; color: $gray; font-family: $fonthead; text-transform: uppercase; font-size: 18px; text-decoration: none; border: 2px solid #703577; border-radius: 10px; padding: 8px 0px;}
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+
+.contact {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+    .sec-2 { padding: 40px 0px;
+
+        .cntct_dvider {
+            > article { width: 49%; float: left; padding-right: 40px;
+
+                h3 { font-size: 20px; font-family: $fonthead; color: #703577; margin-bottom: 20px;}
+
+                .map { 
+                    iframe { width: 100%;}
+                }
+
+            }
+
+            > aside { width: 49%; float: right;
+
+                > ul { margin-top: 41px;
+                    li { width: 49%; display: inline-block; padding: 0px 10px; vertical-align: text-top; margin-bottom: 30px;
+
+                        h4 { font-family: $fonthead; font-size: 18px; color: #703577; margin-bottom: 15px; }
+
+                        p { font-family: $fontnav; font-size: 16px; margin-bottom: 10px; line-height: 28px; color: $gray;}
+
+                        a { font-family: $fontnav; font-size: 16px; margin-bottom: 10px; color: $gray;}
+
+                    }
+                }
+            }   
+        }
+        
+    }
+
+}
+
+
+
+
+
+.mv-values {  position: relative;
+    
+    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+
+        > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+        }
+
+    }
+
+    .sec-2 { padding: 40px 0px;
+
+            article.mission { margin-bottom: 80px;
+                > h3 { font-family: $fonthead; color: $gray; font-size: 30px; text-align: center; margin-bottom: 46px; padding-bottom: 19px; position: relative;}
+
+                >h3::after { position: absolute; content: ''; width: 75px; height: 5px; background: $orange; bottom: 0; left: 50%; transform: translate(-50%, 0);}
+
+                > ul{
+                    > li { width: 33%; display: inline-block; padding: 0px 15px; vertical-align: text-top; text-align: center;
+
+                        h4 { font-family: $fonthead; font-size: 24px; color: $gray; margin-bottom: 10px;}
+
+                        p { font-size: 20px; font-family: $fontnav; color: $gray;}
+                    }
+                } 
+            }
+
+            .vision { padding-bottom: 35px; margin-bottom: 50px;
+                > h3 { font-family: $fonthead; color: $gray; font-size: 30px;   position: relative; padding-bottom: 15px; margin-bottom: 15px}
+
+                > h3::after { position: absolute; content: ''; width: 75px; height: 5px; background: $orange; bottom: 0; left: 0;}
+            
+                > article { padding: 30px 30px 30px 0px; max-width: 725px; width: 100%; background: $white;
+                    > p { font-size: 20px; color: $gray; font-family: $fontnav; margin-bottom: 30px;}
+
+                    > p:last-of-type { margin-bottom: 0px;}
+                }
+
+                > aside { width: 653px; float: right; position: absolute; right: 0; top: 0; height: 440px;
+
+                    img { height: 100%; object-fit: cover;}
+
+                }
+            }
+
+            .values { 
+
+                > h3 { font-family: $fonthead; color: $gray; font-size: 30px; text-align: center; margin-bottom: 15px; padding-bottom: 15px; position: relative;}
+
+                >h3::after { position: absolute; content: ''; width: 75px; height: 5px; background: $orange; bottom: 0; left: 50%; transform: translate(-50%, 0);}
+
+                .tab { float: left; width: 29%; }
+                
+                
+                .tab button { display: block; background-color: inherit; color: black; padding: 15px 15px; width: 100%; border: none; outline: none; text-align: left; cursor: pointer; transition: 0.3s; font-size: 20px; font-family: $fonthead; text-align: right; padding-right: 40px;
+                }
+               
+                .tab button.active {
+                    color: #703577;
+                }
+            
+                .tabcontent { float: left; padding: 0px 12px; border: 1px solid #ccc; width: 70%; border-left: none;  padding-right: 0px; border-radius: 10px;     overflow: hidden;
+
+                    figure { float: right; padding-left: 30px; height: 330px; width: 50%;
+                        img { height: 100%; object-fit: cover;}
+                    }
+
+                    figcaption { padding-top: 15px; 
+                        > p  { font-size: 16px; color: $gray; font-family: $fontnav;     line-height: 28px;}
+                    }
+                }
+
+            }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
