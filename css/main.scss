@@ -91,16 +91,24 @@ $orange: #ff5225;
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { background-color: transparent; color: $white;}
 
-
+.navbar-default .navbar-nav > .active > a:hover { color: $orange; background: $white;}
+.navbar-default .navbar-nav > .open > a { background: $white!important; color: $orange!important; border-radius: 20px; border: 1px solid $orange;}
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
 .nav .open>a { background-color: transparent;}
 
-.dropdown-menu { padding: 0px;
-    > li { padding: 15px!important;
-        > a { color: $gray!important; padding: 0px;}
+.dropdown-menu { padding: 15px 15px; top: 110%; 
+    > li { padding: 15px; border-bottom: 1px solid #ececec;
+        > a { color: $gray; padding: 0px; font-family: $fontnav; font-size: 16px; text-align: center;}
     }
-    > li:hover { background-color: #d5d5d5;}
+
+    > li:last-child { border-bottom: 0px; }
+
+    > li:hover { background-color: $orange;}
+
+    > li:hover > a { color: $white;}
 }
+
+.dropdown-menu::after { content: ''; height: 10px; width: 19px; background-image: url(../images/triangle.png);     position: absolute; top: -3px; left: 50%; transform: translate(-50%, -50%);}
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: transparent;}
 
@@ -112,17 +120,28 @@ $orange: #ff5225;
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus { color: $white; background: transparent;}
 
 .nav-custom { height: 80px; margin: 0px; position: absolute; top: 0; left: 0; width: 100%; z-index: 5; background-color: transparent; border-color: transparent; border-top: 8px solid #464646; padding-right: 35px;
-    li { padding: 33px 23px 18px;
-        a { font-family: $fontnav; font-size: 20px;  padding: 0px;  color: $white; position: relative;}
+    .navbar-nav {
+        > li { padding: 23px 13px 8px;
+            > a { font-family: $fontnav; font-size: 20px;  padding: 10px;  color: $white; position: relative; border: 1px solid transparent;}
 
-        a::after { position: absolute; content: ''; background: $white; height: 1px; right: 100%; transition: 0.3s; bottom: -5px;}
+            > a::after { position: absolute; content: ''; background: $white; height: 1px; right: 100%; transition: 0.3s; bottom: -5px;}
 
-        a:hover::after { right: 0; left: 0;}
+            > a:hover::after { right: 0; left: 0;}
 
 
+        }
+
+        > li:hover { 
+            > a { color: $orange; border-radius: 20px; border: 1px solid $orange; background: $white;}
+        }
+
+
+
+        li.active a::after { right: 0; left: 0;}
     }
+    
 
-    li.active a::after { right: 0; left: 0;}
+    
 }
 
 .logo-holder { position: relative; max-width: 450px; width: 100%; box-sizing: border-box; z-index: 2; padding: 17px 30px 16px 35px;
@@ -173,9 +192,9 @@ background-color: $white;
 
     .sec-2 { padding: 48px 40px 0px;
 
-        > article { background-image: url(../images/gradient.jpg); background-repeat-x: no-repeat; background-size: contain;
+        > article { background-image: url(../images/gradient.jpg); background-repeat-x: no-repeat; background-size: contain; position: relative;
 
-            > div { max-width: 780px; width: 100%; margin: 0 auto; text-align: center; padding: 35px;
+            div.slider-hldr { max-width: 780px; width: 100%; margin: 0 auto; text-align: center; padding: 35px;
 
                 > h4 { font-family: $fontexl; font-size: 24px;  color: $white; 
                     span { text-transform: uppercase; margin-bottom: 5px; display: block;}
@@ -201,6 +220,24 @@ background-color: $white;
 
                         li:first-child::after { position: absolute; content: ''; width: 1px; background: #fff; height: 95px; right: 0; top: -35px;}
                     }
+                }
+            }
+
+            .about-slider { 
+                .owl-nav.disabled { display: block;}
+                .owl-dots { display: none;}
+                .owl-nav { position: absolute; top: 50%; left: 0; width: 100%;
+                    .owl-prev { position: absolute; left: 45px; font-family: $fontnav; font-size: 14px; color: $white; background: transparent; border: 0px; margin: 0; padding: 0px;
+                        > span {     margin-top: -6px; float: right; margin-left: 6px; line-height: 15px;}
+                    }
+
+                    .owl-prev::after { position: absolute; content: ''; width: 35px; left: -45px; height: 1px; background: $white; top: 7px;}
+
+                    .owl-next { position: absolute; right: 45px; font-family: $fontnav; font-size: 14px; color: $white; background: transparent; border: 0px; margin: 0; padding: 0px;
+                        > span { float: left; margin-right: 6px; margin-top: -6px; line-height: 15px; text-align: right;}
+                    }
+
+                    .owl-next::after { position: absolute; content: ''; width: 35px; right: -45px; height: 1px; background: $white; top: 7px;}
                 }
             }
         }
@@ -850,7 +887,7 @@ background-color: $white;
 
 
 
-footer { padding: 20px 35px;
+footer { padding: 20px 35px; border-top: 1px solid #d4d4d4;
 
     > ul { padding: 0px; list-style-type: none; margin: 0px;
         >li { display: inline-block; border-right: 1px solid #464646; vertical-align: text-top; height: 75px;}

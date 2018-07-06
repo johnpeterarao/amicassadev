@@ -115,19 +115,48 @@ input, select, textarea, button {
   background-color: transparent;
   color: #fff; }
 
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #ff5225;
+  background: #fff; }
+
+.navbar-default .navbar-nav > .open > a {
+  background: #fff !important;
+  color: #ff5225 !important;
+  border-radius: 20px;
+  border: 1px solid #ff5225; }
+
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
 .nav .open > a {
   background-color: transparent; }
 
 .dropdown-menu {
-  padding: 0px; }
+  padding: 15px 15px;
+  top: 110%; }
   .dropdown-menu > li {
-    padding: 15px !important; }
+    padding: 15px;
+    border-bottom: 1px solid #ececec; }
     .dropdown-menu > li > a {
-      color: #505050 !important;
-      padding: 0px; }
+      color: #505050;
+      padding: 0px;
+      font-family: "nunitoregular", Arial, sans-serif;
+      font-size: 16px;
+      text-align: center; }
+  .dropdown-menu > li:last-child {
+    border-bottom: 0px; }
   .dropdown-menu > li:hover {
-    background-color: #d5d5d5; }
+    background-color: #ff5225; }
+  .dropdown-menu > li:hover > a {
+    color: #fff; }
+
+.dropdown-menu::after {
+  content: '';
+  height: 10px;
+  width: 19px;
+  background-image: url(../images/triangle.png);
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   background-color: transparent; }
@@ -154,15 +183,16 @@ input, select, textarea, button {
   border-color: transparent;
   border-top: 8px solid #464646;
   padding-right: 35px; }
-  .nav-custom li {
-    padding: 33px 23px 18px; }
-    .nav-custom li a {
+  .nav-custom .navbar-nav > li {
+    padding: 23px 13px 8px; }
+    .nav-custom .navbar-nav > li > a {
       font-family: "nunitoregular", Arial, sans-serif;
       font-size: 20px;
-      padding: 0px;
+      padding: 10px;
       color: #fff;
-      position: relative; }
-    .nav-custom li a::after {
+      position: relative;
+      border: 1px solid transparent; }
+    .nav-custom .navbar-nav > li > a::after {
       position: absolute;
       content: '';
       background: #fff;
@@ -170,10 +200,15 @@ input, select, textarea, button {
       right: 100%;
       transition: 0.3s;
       bottom: -5px; }
-    .nav-custom li a:hover::after {
+    .nav-custom .navbar-nav > li > a:hover::after {
       right: 0;
       left: 0; }
-  .nav-custom li.active a::after {
+  .nav-custom .navbar-nav > li:hover > a {
+    color: #ff5225;
+    border-radius: 20px;
+    border: 1px solid #ff5225;
+    background: #fff; }
+  .nav-custom .navbar-nav li.active a::after {
     right: 0;
     left: 0; }
 
@@ -270,24 +305,25 @@ input, select, textarea, button {
     .home .sec-2 > article {
       background-image: url(../images/gradient.jpg);
       background-repeat-x: no-repeat;
-      background-size: contain; }
-      .home .sec-2 > article > div {
+      background-size: contain;
+      position: relative; }
+      .home .sec-2 > article div.slider-hldr {
         max-width: 780px;
         width: 100%;
         margin: 0 auto;
         text-align: center;
         padding: 35px; }
-        .home .sec-2 > article > div > h4 {
+        .home .sec-2 > article div.slider-hldr > h4 {
           font-family: "nunito_sansextralight";
           font-size: 24px;
           color: #fff; }
-          .home .sec-2 > article > div > h4 span {
+          .home .sec-2 > article div.slider-hldr > h4 span {
             text-transform: uppercase;
             margin-bottom: 5px;
             display: block; }
-        .home .sec-2 > article > div > h4.hmrgn {
+        .home .sec-2 > article div.slider-hldr > h4.hmrgn {
           margin-bottom: 25px; }
-        .home .sec-2 > article > div > h3 {
+        .home .sec-2 > article div.slider-hldr > h3 {
           font-family: "nunito_sansextrabold";
           font-size: 36px;
           color: #fff;
@@ -295,7 +331,7 @@ input, select, textarea, button {
           letter-spacing: 2px;
           padding-bottom: 17px;
           margin-bottom: 15px; }
-        .home .sec-2 > article > div > h3::after {
+        .home .sec-2 > article div.slider-hldr > h3::after {
           position: absolute;
           content: '';
           background: #fff;
@@ -304,13 +340,13 @@ input, select, textarea, button {
           bottom: 0;
           left: 50%;
           transform: translate(-50%, -50%); }
-        .home .sec-2 > article > div p {
+        .home .sec-2 > article div.slider-hldr p {
           color: #fff;
           font-family: "nunito_sansextralight";
           font-size: 18px;
           line-height: 30px;
           margin-bottom: 50px; }
-        .home .sec-2 > article > div > div {
+        .home .sec-2 > article div.slider-hldr > div {
           max-width: 480px;
           width: 100%;
           margin: 0 auto;
@@ -318,22 +354,22 @@ input, select, textarea, button {
           border-radius: 30px;
           padding: 17px 0px;
           background: rgba(0, 0, 0, 0.15); }
-          .home .sec-2 > article > div > div > ul {
+          .home .sec-2 > article div.slider-hldr > div > ul {
             padding: 0px;
             list-style-type: none;
             margin: 0px; }
-            .home .sec-2 > article > div > div > ul li {
+            .home .sec-2 > article div.slider-hldr > div > ul li {
               width: 49%;
               display: inline-block; }
-              .home .sec-2 > article > div > div > ul li a {
+              .home .sec-2 > article div.slider-hldr > div > ul li a {
                 font-family: "nunitobold", Arial, sans-serif;
                 color: #fff;
                 font-size: 14px;
                 text-transform: uppercase;
                 text-decoration: none; }
-            .home .sec-2 > article > div > div > ul li:first-child {
+            .home .sec-2 > article div.slider-hldr > div > ul li:first-child {
               position: relative; }
-            .home .sec-2 > article > div > div > ul li:first-child::after {
+            .home .sec-2 > article div.slider-hldr > div > ul li:first-child::after {
               position: absolute;
               content: '';
               width: 1px;
@@ -341,6 +377,62 @@ input, select, textarea, button {
               height: 95px;
               right: 0;
               top: -35px; }
+      .home .sec-2 > article .about-slider .owl-nav.disabled {
+        display: block; }
+      .home .sec-2 > article .about-slider .owl-dots {
+        display: none; }
+      .home .sec-2 > article .about-slider .owl-nav {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%; }
+        .home .sec-2 > article .about-slider .owl-nav .owl-prev {
+          position: absolute;
+          left: 45px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          font-size: 14px;
+          color: #fff;
+          background: transparent;
+          border: 0px;
+          margin: 0;
+          padding: 0px; }
+          .home .sec-2 > article .about-slider .owl-nav .owl-prev > span {
+            margin-top: -6px;
+            float: right;
+            margin-left: 6px;
+            line-height: 15px; }
+        .home .sec-2 > article .about-slider .owl-nav .owl-prev::after {
+          position: absolute;
+          content: '';
+          width: 35px;
+          left: -45px;
+          height: 1px;
+          background: #fff;
+          top: 7px; }
+        .home .sec-2 > article .about-slider .owl-nav .owl-next {
+          position: absolute;
+          right: 45px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          font-size: 14px;
+          color: #fff;
+          background: transparent;
+          border: 0px;
+          margin: 0;
+          padding: 0px; }
+          .home .sec-2 > article .about-slider .owl-nav .owl-next > span {
+            float: left;
+            margin-right: 6px;
+            margin-top: -6px;
+            line-height: 15px;
+            text-align: right; }
+        .home .sec-2 > article .about-slider .owl-nav .owl-next::after {
+          position: absolute;
+          content: '';
+          width: 35px;
+          right: -45px;
+          height: 1px;
+          background: #fff;
+          top: 7px; }
 
 .abt-company {
   position: relative; }
@@ -1350,7 +1442,8 @@ input, select, textarea, button {
           line-height: 28px; }
 
 footer {
-  padding: 20px 35px; }
+  padding: 20px 35px;
+  border-top: 1px solid #d4d4d4; }
   footer > ul {
     padding: 0px;
     list-style-type: none;

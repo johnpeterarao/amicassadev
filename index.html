@@ -17,6 +17,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/main.css">
@@ -51,8 +52,10 @@
                           <li class="dropdown">
                               <a data-toggle="dropdown" class="dropdown-toggle" href="#">About the Company <b class="caret"></b></a>
                               <ul role="menu" class="dropdown-menu">
-                                  <li><a href="#">Drop</a></li>
-                                  <li><a href="#">Drop</a></li>
+                                  <li><a href="#">Company History</a></li>
+                                  <li><a href="#">Mission, Vision &amp;<br> Core Values</a></li>
+                                  <li><a href="">Business Services</a></li>
+                                  <li><a href="">ManCom Services</a></li>
                               </ul>
                           </li>
                           <li class="dropdown">
@@ -103,27 +106,44 @@
 
           <section class="sec-2">
             <article>
-              <div>
-                <h4><span>About</span></h4>
-                <h3>Amicassa</h3>
-                <h4 class="hmrgn">Reliable quality service at optimal cost.</h4>
-                <p>The Client is the main purpose of our business. All of our tasks, processes and procedures are geared towards accomplishing the requirements of the Client. We foresee the ever-changing needs of the Client and proactively respond to these needs.</p>
+              <div class="owl-carousel owl-theme about-slider">
+                <div class="slider-hldr item">
+                  <h4><span>About</span></h4>
+                  <h3>Amicassa</h3>
+                  <h4 class="hmrgn">Reliable quality service at optimal cost.</h4>
+                  <p>The Client is the main purpose of our business. All of our tasks, processes and procedures are geared towards accomplishing the requirements of the Client. We foresee the ever-changing needs of the Client and proactively respond to these needs.</p>
 
-                <div>
-                  <ul class="pad-0">
-                    <li>
-                      <a href="">Learn more about us</a>
-                    </li>
-                    <li>
-                      <a href="">What's New</a>
-                    </li>
-                  </ul>
+                  <div>
+                    <ul class="pad-0">
+                      <li>
+                        <a href="">Learn more about us</a>
+                      </li>
+                      <li>
+                        <a href="">What's New</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="slider-hldr item">
+                  <h4><span>About</span></h4>
+                  <h3>Amicassa</h3>
+                  <h4 class="hmrgn">Reliable quality service at optimal cost.</h4>
+                  <p>The Client is the main purpose of our business. All of our tasks, processes and procedures are geared towards accomplishing the requirements of the Client. We foresee the ever-changing needs of the Client and proactively respond to these needs.</p>
+
+                  <div>
+                    <ul class="pad-0">
+                      <li>
+                        <a href="">Learn more about us</a>
+                      </li>
+                      <li>
+                        <a href="">What's New</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
-
-              
             </article>
+
           </section>
 
       </div>  
@@ -192,6 +212,24 @@
           loop:true,
           margin:10,
           nav:true,
+          responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+          }
+        });
+
+        $('.about-slider').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          navText : ["01<span>About<br>Micasa</span>","02<span>Our<br>Services</span>"],
           responsive:{
           0:{
               items:1
