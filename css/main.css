@@ -130,8 +130,12 @@ input, select, textarea, button {
   background-color: transparent; }
 
 .dropdown-menu {
-  padding: 15px 15px;
-  top: 110%; }
+  padding: 0px;
+  top: 110%;
+  left: 0 !important;
+  border-top-left-radius: 15px !important;
+  border-radius: 15px;
+  border-top-right-radius: 15px !important; }
   .dropdown-menu > li {
     padding: 15px;
     border-bottom: 1px solid #ececec; }
@@ -142,7 +146,12 @@ input, select, textarea, button {
       font-size: 16px;
       text-align: center; }
   .dropdown-menu > li:last-child {
-    border-bottom: 0px; }
+    border-bottom: 0px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px; }
+  .dropdown-menu > li:first-child {
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px; }
   .dropdown-menu > li:hover {
     background-color: #ff5225; }
   .dropdown-menu > li:hover > a {
@@ -154,7 +163,7 @@ input, select, textarea, button {
   width: 19px;
   background-image: url(../images/triangle.png);
   position: absolute;
-  top: -3px;
+  top: -5px;
   left: 50%;
   transform: translate(-50%, -50%); }
 
@@ -249,8 +258,85 @@ input, select, textarea, button {
 
 .home {
   position: relative; }
+  .home .carousel-bnnr aside {
+    height: 768px;
+    width: 60%;
+    float: right; }
+    .home .carousel-bnnr aside .home-slider .item {
+      height: 768px; }
+      .home .carousel-bnnr aside .home-slider .item img {
+        height: 100%;
+        object-fit: cover; }
+      .home .carousel-bnnr aside .home-slider .item .play-hldr {
+        max-width: 125px;
+        width: 100%;
+        height: 125px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+        .home .carousel-bnnr aside .home-slider .item .play-hldr a {
+          outline: none; }
+    .home .carousel-bnnr aside .home-slider .slick-dots {
+      position: absolute;
+      padding: 0px;
+      top: 50%;
+      right: 20px;
+      list-style-type: none; }
+      .home .carousel-bnnr aside .home-slider .slick-dots li {
+        list-style-type: none; }
+        .home .carousel-bnnr aside .home-slider .slick-dots li button {
+          width: 17px;
+          height: 17px;
+          display: block;
+          margin: 9px 0px;
+          background: transparent;
+          border: 1px solid #fff;
+          text-indent: 999;
+          text-indent: -999px; }
+      .home .carousel-bnnr aside .home-slider .slick-dots li.slick-active button {
+        background: #fff; }
+      .home .carousel-bnnr aside .home-slider .slick-dots li:first-child button {
+        margin-top: 0px; }
+      .home .carousel-bnnr aside .home-slider .slick-dots li:last-child button {
+        margin-bottom: 0px; }
+    .home .carousel-bnnr aside .slick-prev {
+      display: none !important; }
+    .home .carousel-bnnr aside .slick-next {
+      display: none !important; }
+  .home .carousel-bnnr article {
+    margin-top: 191px;
+    float: left;
+    width: 39%;
+    padding: 0px 35px; }
+    .home .carousel-bnnr article > div {
+      max-width: 420px;
+      width: 100%; }
+      .home .carousel-bnnr article > div h2 {
+        font-family: "nunitobold", Arial, sans-serif;
+        font-size: 30px;
+        color: #505050;
+        margin-bottom: 48px;
+        padding-bottom: 34px;
+        position: relative; }
+      .home .carousel-bnnr article > div h2::after {
+        height: 5px;
+        width: 72px;
+        background: #ff5e35;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .home .carousel-bnnr article > div h4 {
+        font-family: "nunitoregular", Arial, sans-serif;
+        font-size: 20px;
+        color: #505050;
+        line-height: 25px; }
+        .home .carousel-bnnr article > div h4 span {
+          font-family: "nunitobold", Arial, sans-serif; }
   .home .home-slider {
-    height: 768px; }
+    height: 768px;
+    overflow-y: hidden; }
     .home .home-slider .item aside {
       height: 768px;
       width: 60%;
@@ -300,6 +386,23 @@ input, select, textarea, button {
             font-family: "nunitobold", Arial, sans-serif; }
     .home .home-slider .owl-nav {
       display: none; }
+    .home .home-slider .owl-dots {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 15px; }
+      .home .home-slider .owl-dots .owl-dot {
+        display: block; }
+        .home .home-slider .owl-dots .owl-dot span {
+          width: 17px;
+          height: 17px;
+          margin: 10px 7px;
+          background: transparent;
+          border: 1px solid #fff;
+          border-radius: 0;
+          display: block; }
+      .home .home-slider .owl-dots .owl-dot.active span {
+        background: #fff; }
   .home .sec-2 {
     padding: 48px 40px 0px; }
     .home .sec-2 > article {
@@ -437,12 +540,9 @@ input, select, textarea, button {
 .abt-company {
   position: relative; }
   .abt-company .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .abt-company .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -507,12 +607,9 @@ input, select, textarea, button {
 .abt-company-services {
   position: relative; }
   .abt-company-services .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .abt-company-services .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -546,15 +643,23 @@ input, select, textarea, button {
   .abt-company-services .sec-2 {
     padding: 59px 0px 40px; }
     .abt-company-services .sec-2 ul {
-      list-style-type: none;
+      padding: 0;
       margin: 0;
-      padding: 0px; }
+      list-style: none;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: space-around; }
       .abt-company-services .sec-2 ul > li {
         width: 24.5%;
         display: inline-block;
-        padding: 0px 15px; }
+        margin: 0px 15px;
+        border: 1px solid #ebebeb;
+        flex: 1; }
         .abt-company-services .sec-2 ul > li article {
-          border: 1px solid #ebebeb;
           padding: 0px 20px 30px 20px; }
           .abt-company-services .sec-2 ul > li article > figure {
             height: 92px;
@@ -580,12 +685,9 @@ input, select, textarea, button {
 .applicants {
   position: relative; }
   .applicants .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .applicants .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -637,7 +739,8 @@ input, select, textarea, button {
           border: 1px solid #ebebeb;
           border-radius: 10px;
           padding: 0px 20px 35px;
-          height: 335px; }
+          height: 350px;
+          position: relative; }
         .applicants .sec-2 .btm_applicnt > ul > li figure {
           height: 92px;
           max-width: 92px;
@@ -666,7 +769,13 @@ input, select, textarea, button {
             padding: 10px 15px;
             border: 2px solid #703577;
             border-radius: 15px;
-            text-decoration: none; }
+            text-decoration: none;
+            position: absolute;
+            width: 100%;
+            max-width: 195px;
+            left: 50%;
+            bottom: 10px;
+            transform: translate(-50%, 0); }
           .applicants .sec-2 .btm_applicnt > ul > li figcaption > ul > li > a {
             font-family: "nunitoregular", Arial, sans-serif;
             font-size: 16px;
@@ -684,12 +793,9 @@ input, select, textarea, button {
 .employees {
   position: relative; }
   .employees .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .employees .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -745,12 +851,9 @@ input, select, textarea, button {
 .whatsnew {
   position: relative; }
   .whatsnew .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .whatsnew .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -796,32 +899,55 @@ input, select, textarea, button {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-      .whatsnew .sec-2 .wn-list > li div > article h4 {
-        font-family: "nunitobold", Arial, sans-serif;
-        font-size: 24px;
-        color: #ff5225; }
-      .whatsnew .sec-2 .wn-list > li div > article span {
-        display: block;
-        color: #a6a6a6;
-        font-size: 15px;
-        margin-bottom: 10px; }
-      .whatsnew .sec-2 .wn-list > li div > article h6 {
-        margin-bottom: 40px; }
-        .whatsnew .sec-2 .wn-list > li div > article h6 a {
-          color: #505050;
-          font-size: 18px;
+      .whatsnew .sec-2 .wn-list > li div > article {
+        float: right;
+        width: 70%; }
+        .whatsnew .sec-2 .wn-list > li div > article h4 {
+          font-family: "nunitobold", Arial, sans-serif;
+          font-size: 24px;
+          color: #ff5225; }
+        .whatsnew .sec-2 .wn-list > li div > article span {
+          display: block;
+          color: #a6a6a6;
+          font-size: 15px;
+          margin-bottom: 10px; }
+        .whatsnew .sec-2 .wn-list > li div > article h6 {
+          margin-bottom: 40px; }
+          .whatsnew .sec-2 .wn-list > li div > article h6 a {
+            color: #505050;
+            font-size: 18px;
+            font-family: "nunitoregular", Arial, sans-serif;
+            text-decoration: none;
+            line-height: 24px; }
+        .whatsnew .sec-2 .wn-list > li div > article > a {
+          text-decoration: none;
           font-family: "nunitoregular", Arial, sans-serif;
-          text-decoration: none; }
-      .whatsnew .sec-2 .wn-list > li div > article > a {
-        text-decoration: none;
-        font-family: "nunitoregular", Arial, sans-serif;
-        color: #ff5225;
-        font-size: 20px;
-        padding-bottom: 0px;
-        border-bottom: 1px solid #ff5225;
-        text-transform: uppercase; }
+          color: #ff5225;
+          font-size: 20px;
+          padding-bottom: 0px;
+          border-bottom: 1px solid #ff5225;
+          text-transform: uppercase; }
     .whatsnew .sec-2 .wn-list > li:first-child {
       padding-top: 0px; }
+    .whatsnew .sec-2 .wn-slider .owl-nav {
+      display: block;
+      position: absolute;
+      top: 55px;
+      right: 105px; }
+      .whatsnew .sec-2 .wn-slider .owl-nav .owl-prev {
+        display: none; }
+      .whatsnew .sec-2 .wn-slider .owl-nav .owl-next {
+        position: absolute;
+        border: 1px solid #ff5225;
+        border-radius: 10px;
+        padding: 7px 17px;
+        top: 0px;
+        right: 0px;
+        font-family: "nunitobold", Arial, sans-serif;
+        text-transform: uppercase;
+        color: #ff5225;
+        font-size: 16px;
+        text-decoration: none; }
     .whatsnew .sec-2 article.ltst-nws {
       padding: 48px 94px; }
       .whatsnew .sec-2 article.ltst-nws > .box {
@@ -864,7 +990,8 @@ input, select, textarea, button {
           border-radius: 10px;
           padding: 10px 17px;
           top: 11px;
-          right: 18px; }
+          right: 18px;
+          display: none; }
           .whatsnew .sec-2 article.ltst-nws > .box .next-btn a {
             text-transform: uppercase;
             color: #ff5225;
@@ -875,12 +1002,9 @@ input, select, textarea, button {
 .whatsnew_single {
   position: relative; }
   .whatsnew_single .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .whatsnew_single .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -946,16 +1070,21 @@ input, select, textarea, button {
             .whatsnew_single .sec-2 article .head_news div.right-head-news > ul li:first-child span {
               font-size: 11px;
               font-family: "nunitoregular", Arial, sans-serif; }
-      .whatsnew_single .sec-2 article .body_news img {
-        margin-top: 30px;
-        margin-bottom: 40px; }
-      .whatsnew_single .sec-2 article .body_news p {
-        margin-bottom: 40px;
+      .whatsnew_single .sec-2 article .body_news {
         font-family: "nunitoregular", Arial, sans-serif;
-        font-size: 20px;
-        color: #505050; }
-      .whatsnew_single .sec-2 article .body_news p:first-of-type {
-        margin-bottom: 0px; }
+        font-size: 18px;
+        color: #505050;
+        padding-bottom: 30px; }
+        .whatsnew_single .sec-2 article .body_news img {
+          margin-top: 30px;
+          margin-bottom: 40px; }
+        .whatsnew_single .sec-2 article .body_news p {
+          margin-bottom: 40px;
+          font-family: "nunitoregular", Arial, sans-serif;
+          font-size: 18px;
+          color: #505050; }
+        .whatsnew_single .sec-2 article .body_news p:first-of-type {
+          margin-bottom: 0px; }
     .whatsnew_single .sec-2 .footer_news {
       padding: 40px 15px 20px; }
       .whatsnew_single .sec-2 .footer_news a {
@@ -967,12 +1096,9 @@ input, select, textarea, button {
 .faq_page {
   position: relative; }
   .faq_page .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .faq_page .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -1066,12 +1192,9 @@ input, select, textarea, button {
 .contact_client {
   position: relative; }
   .contact_client .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .contact_client .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -1142,7 +1265,9 @@ input, select, textarea, button {
       .contact_client .sec-2 .cntct_dvider > aside h5 {
         color: #505050;
         font-size: 18px;
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        letter-spacing: 0px;
+        text-transform: capitalize; }
       .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li {
         position: relative;
         margin-bottom: 15px;
@@ -1155,12 +1280,15 @@ input, select, textarea, button {
           width: 100%;
           font-size: 17px;
           color: #505050; }
-        .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li span {
+        .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li h5 {
           position: absolute;
           font-size: 18px;
           font-family: "nunitoregular", Arial, sans-serif;
           left: 0;
-          top: 8px; }
+          top: 8px;
+          margin-bottom: 0px;
+          letter-spacing: 0px;
+          text-transform: capitalize; }
         .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li textarea {
           border: 1px solid #e1e1e1;
           padding-left: 15px;
@@ -1170,7 +1298,7 @@ input, select, textarea, button {
           color: #505050;
           height: 200px;
           resize: none; }
-      .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li:last-child a {
+      .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li input[type="submit"] {
         display: block;
         max-width: 148px;
         width: 100%;
@@ -1182,17 +1310,15 @@ input, select, textarea, button {
         text-decoration: none;
         border: 2px solid #703577;
         border-radius: 10px;
-        padding: 8px 0px; }
+        padding: 8px 0px;
+        background: #fff; }
 
 .contact {
   position: relative; }
   .contact .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .contact .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -1267,12 +1393,9 @@ input, select, textarea, button {
 .mv-values {
   position: relative; }
   .mv-values .sec-1 {
-    height: 416px;
-    background-image: url(../images/banner-cmpny.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    position: relative; }
+    height: 417px;
+    position: relative;
+    /* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */ }
     .mv-values .sec-1 > .hero {
       position: absolute;
       top: 180px;
@@ -1467,7 +1590,8 @@ footer {
       footer > ul > li:nth-child(2) h5 {
         font-family: "nunitoregular", Arial, sans-serif;
         font-size: 14px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        text-transform: capitalize; }
       footer > ul > li:nth-child(2) > ul {
         list-style-type: none;
         padding: 0px; }
@@ -1484,7 +1608,8 @@ footer {
               object-fit: contain; }
     footer > ul > li:last-child {
       border-right: 0px;
-      padding-left: 25px; }
+      padding-left: 25px;
+      width: 19%; }
       footer > ul > li:last-child a {
         display: block;
         font-family: "nunito_sansextralight";
@@ -1532,5 +1657,75 @@ footer {
   border-radius: 10px; }
   .video-banner-popup iframe {
     width: 100%; }
+
+div.wpcf7-validation-errors {
+  border: 0px !important;
+  text-align: center;
+  font-size: 17px;
+  font-family: "nunitoregular", Arial, sans-serif;
+  color: #ff0000; }
+
+div.wpcf7-mail-sent-ok {
+  border: 0px !important;
+  text-align: center;
+  font-size: 17px;
+  font-family: "nunitoregular", Arial, sans-serif;
+  color: #398f14; }
+
+.glbl_slider {
+  position: relative; }
+  .glbl_slider .owl-item > .item > .img-hldr {
+    height: 417px; }
+    .glbl_slider .owl-item > .item > .img-hldr img {
+      height: 100%;
+      object-fit: cover; }
+  .glbl_slider .owl-item > .item > .hero {
+    position: absolute;
+    top: 180px;
+    max-width: 1024px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+    width: 100%;
+    padding: 0px 15px; }
+    .glbl_slider .owl-item > .item > .hero h3 {
+      padding-bottom: 15px;
+      position: relative;
+      margin-bottom: 20px;
+      font-family: "nunitobold", Arial, sans-serif;
+      color: #fff;
+      font-size: 30px;
+      letter-spacing: 2px; }
+    .glbl_slider .owl-item > .item > .hero h3::after {
+      position: absolute;
+      content: '';
+      bottom: 0px;
+      width: 75px;
+      height: 5px;
+      background: #ff5e35;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .glbl_slider .owl-item > .item > .hero p {
+      font-family: "nunito_sansextralight";
+      font-size: 20px;
+      color: #fff; }
+  .glbl_slider .owl-nav {
+    display: none; }
+  .glbl_slider .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0); }
+    .glbl_slider .owl-dots .owl-dot {
+      display: inline-block;
+      margin: 0px 5px; }
+      .glbl_slider .owl-dots .owl-dot span {
+        height: 17px;
+        width: 17px;
+        border: 2px solid #fff;
+        display: block;
+        background: transparent; }
+    .glbl_slider .owl-dots .owl-dot.active span {
+      background: #fff; }
 
 /*# sourceMappingURL=main.css.map */

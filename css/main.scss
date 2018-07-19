@@ -96,19 +96,21 @@ $orange: #ff5225;
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
 .nav .open>a { background-color: transparent;}
 
-.dropdown-menu { padding: 15px 15px; top: 110%; 
+.dropdown-menu {     padding: 0px; top: 110%; left: 0 !important; border-top-left-radius: 15px!important; border-radius: 15px; border-top-right-radius: 15px!important;
     > li { padding: 15px; border-bottom: 1px solid #ececec;
         > a { color: $gray; padding: 0px; font-family: $fontnav; font-size: 16px; text-align: center;}
     }
 
-    > li:last-child { border-bottom: 0px; }
+    > li:last-child { border-bottom: 0px; border-bottom-right-radius: 14px; border-bottom-left-radius: 14px;}
+    > li:first-child {  border-top-right-radius: 14px; border-top-left-radius: 14px;}
+
 
     > li:hover { background-color: $orange;}
 
     > li:hover > a { color: $white;}
 }
 
-.dropdown-menu::after { content: ''; height: 10px; width: 19px; background-image: url(../images/triangle.png);     position: absolute; top: -3px; left: 50%; transform: translate(-50%, -50%);}
+.dropdown-menu::after { content: ''; height: 10px; width: 19px; background-image: url(../images/triangle.png);     position: absolute; top: -5px; left: 50%; transform: translate(-50%, -50%);}
 
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: transparent;}
 
@@ -160,7 +162,51 @@ background-color: $white;
 .cs-container { max-width: 1054px; position: relative; padding: 0px 15px; margin: 0 auto;}
 
 .home { position: relative;
-    .home-slider { height: 768px;
+
+    .carousel-bnnr {
+        aside{   height: 768px; width: 60%; float: right;
+            .home-slider {
+                .item{ height: 768px;
+                    img { height: 100%; object-fit: cover;}
+
+                    .play-hldr { max-width: 125px; width: 100%; height: 125px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+                    a { outline: none;}
+                    }
+                }
+
+                .slick-dots { position: absolute; padding: 0px; top: 50%; right: 20px; list-style-type: none;
+                    li { list-style-type: none;
+                        button { width: 17px; height: 17px; display: block;  margin: 9px 0px; background: transparent; border: 1px solid #fff; text-indent: 999; text-indent: -999px;}
+
+                    }
+
+                    li.slick-active button { background: #fff;}
+
+                    li:first-child button { margin-top: 0px;}
+                    li:last-child button { margin-bottom: 0px;}
+                }
+            }
+
+            .slick-prev { display: none!important;}
+            .slick-next { display: none!important;}
+                
+        }
+        article {     margin-top: 191px; float: left; width: 39%; padding: 0px 35px;
+
+            > div { max-width: 420px; width: 100%; 
+
+                h2 { font-family: $fonthead; font-size: 30px; color: $gray; margin-bottom: 48px; padding-bottom: 34px; position: relative;}
+
+                h2::after { height: 5px; width: 72px; background: #ff5e35; content: ''; position: absolute; bottom: 0; left: 0;}
+
+                h4 { font-family: $fontnav; font-size: 20px; color: $gray; line-height: 25px;
+                        span { font-family: $fonthead;}
+                }
+            }
+                
+        }
+    }
+    .home-slider { height: 768px; overflow-y: hidden;
         .item{ 
 
             aside{ height: 768px; width: 60%; float: right;
@@ -188,6 +234,16 @@ background-color: $white;
         }
 
         .owl-nav { display: none;}
+
+        .owl-dots { display: block; position: absolute; top: 50%; right: 15px;
+            .owl-dot{ display: block;
+                span { width: 17px; height: 17px; margin: 10px 7px; background: transparent; border: 1px solid #fff; border-radius: 0; display: block;}
+            }
+
+            .owl-dot.active { 
+                span { background: #fff;}
+            }
+        }
     }
 
     .sec-2 { padding: 48px 40px 0px;
@@ -249,7 +305,7 @@ background-color: $white;
 
 .abt-company { position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 825px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%!important; padding: 0px 15px!important;
 
@@ -284,7 +340,7 @@ background-color: $white;
 
 .abt-company-services {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -300,10 +356,10 @@ background-color: $white;
     }
 
     .sec-2 { padding: 59px 0px 40px;
-        ul{ list-style-type: none; margin: 0; padding: 0px;
+        ul{ padding: 0; margin: 0; list-style: none;  display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;  -webkit-flex-flow: row wrap; justify-content: space-around;
 
-            > li { width: 24.5%; display: inline-block; padding: 0px 15px;
-                article { border: 1px solid #ebebeb; padding: 0px 20px 30px 20px;
+            > li { width: 24.5%; display: inline-block; margin: 0px 15px; border: 1px solid #ebebeb; flex: 1;
+                article { padding: 0px 20px 30px 20px;
 
                     > figure { height: 92px; width: 100%; max-width: 92px; margin: 0 auto; margin-bottom: 15px; margin-top: -33px;
                         img { height: 100%;}
@@ -324,7 +380,7 @@ background-color: $white;
 
 .applicants {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -349,7 +405,7 @@ background-color: $white;
             > ul { padding: 0px; margin: 0px;
                 > li { width: 33%; display: inline-block;     vertical-align: text-top;
 
-                    > .box { max-width: 260px; width: 100%; border: 1px solid #ebebeb; border-radius: 10px; padding: 0px 20px 35px; height: 335px;}
+                    > .box { max-width: 260px; width: 100%; border: 1px solid #ebebeb; border-radius: 10px; padding: 0px 20px 35px; height: 350px; position: relative}
 
                     figure { height: 92px; max-width: 92px; width: 100%; margin: 0 auto; margin-top: -33px; margin-bottom: 15px;}
 
@@ -358,7 +414,7 @@ background-color: $white;
 
                         p { font-family: $fontnav; font-size: 16px; color: $gray; margin-bottom: 35px;}
 
-                        a.bordered-a { font-family: $fonthead; font-size: 16px; text-transform: uppercase; color: $gray; padding: 10px 15px; border: 2px solid #703577; border-radius: 15px; text-decoration: none;}
+                        a.bordered-a { font-family: $fonthead; font-size: 16px; text-transform: uppercase; color: $gray; padding: 10px 15px; border: 2px solid #703577; border-radius: 15px; text-decoration: none; position: absolute; width: 100%; max-width: 195px; left: 50%; bottom: 10px; transform: translate(-50%, 0);}
 
                         > ul {
                             > li {
@@ -387,7 +443,7 @@ background-color: $white;
 
 .employees {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -418,7 +474,7 @@ background-color: $white;
 
 .whatsnew {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -441,13 +497,13 @@ background-color: $white;
                         img { width: 100%; height: 100%; object-fit: cover;}
                     }
 
-                    > article { 
+                    > article {     float: right; width: 70%;
                         h4 { font-family: $fonthead; font-size: 24px; color: $orange; }
 
                         span { display: block; color: #a6a6a6; font-size: 15px; margin-bottom: 10px;}
 
                         h6 { margin-bottom: 40px;
-                            a { color: $gray; font-size: 18px; font-family: $fontnav; text-decoration: none;}
+                            a { color: $gray; font-size: 18px; font-family: $fontnav; text-decoration: none; line-height: 24px;}
                         }
 
                         > a { text-decoration: none; font-family: $fontnav; color: $orange; font-size: 20px; padding-bottom: 0px; border-bottom: 1px solid $orange; text-transform: uppercase;}
@@ -456,6 +512,16 @@ background-color: $white;
             }
 
             > li:first-child { padding-top: 0px;}
+        }
+
+        .wn-slider {
+            .owl-nav { display: block; position: absolute; top: 55px; right: 105px;
+                .owl-prev { display: none;}
+                .owl-next { position: absolute; border: 1px solid $orange; border-radius: 10px; padding: 7px 17px; top: 0px; right: 0px;  font-family: $fonthead; text-transform: uppercase; color: $orange; font-size: 16px; text-decoration: none;
+
+                }
+            }
+
         }
 
         article.ltst-nws { padding: 48px 94px;
@@ -473,7 +539,7 @@ background-color: $white;
                     span { font-family: $fonthead; font-size: 20px; color: $white; text-transform: uppercase;}
                 }
 
-                .next-btn { position: absolute; border: 1px solid $orange; border-radius: 10px; padding: 10px 17px; top: 11px; right: 18px;
+                .next-btn { position: absolute; border: 1px solid $orange; border-radius: 10px; padding: 10px 17px; top: 11px; right: 18px; display: none;
                     a { text-transform: uppercase; color: $orange; font-size: 16px; text-decoration: none; font-family: $fonthead; }
                 }
             }
@@ -489,7 +555,7 @@ background-color: $white;
 
 .whatsnew_single {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -530,11 +596,11 @@ background-color: $white;
                 
             }
 
-            .body_news{
+            .body_news{ font-family: $fontnav; font-size: 18px; color: $gray; padding-bottom: 30px;
 
                 img { margin-top: 30px; margin-bottom: 40px;}
 
-                p{ margin-bottom: 40px; font-family: $fontnav; font-size: 20px; color: $gray;}
+                p{ margin-bottom: 40px; font-family: $fontnav; font-size: 18px; color: $gray;}
 
                 p:first-of-type{ margin-bottom: 0px; }
             }
@@ -552,7 +618,7 @@ background-color: $white;
 
 .faq_page {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -656,7 +722,7 @@ background-color: $white;
 
 .contact_client {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -694,7 +760,7 @@ background-color: $white;
 
             > aside { width: 49%; float: right; padding: 0px 15px;
 
-                h5 { color: $gray; font-size: 18px; margin-bottom: 25px;}
+                h5 { color: $gray; font-size: 18px; margin-bottom: 25px; letter-spacing: 0px;     text-transform: capitalize;}
 
                 .form-hldr {
                     > ul{
@@ -704,14 +770,14 @@ background-color: $white;
                                 height: 42px; border: 1px solid #e1e1e1; padding-left: 15px; font-family: $fontnav; width: 100%; font-size: 17px; color: $gray;
                             }
 
-                            span { position: absolute; font-size: 18px; font-family: $fontnav; left: 0; top: 8px;}
+                            h5 { position: absolute; font-size: 18px; font-family: $fontnav; left: 0; top: 8px; margin-bottom: 0px; letter-spacing: 0px; text-transform: capitalize}
 
                             textarea {  border: 1px solid #e1e1e1; padding-left: 15px; font-family: $fontnav; width: 100%; font-size: 17px; color: $gray; height: 200px; resize: none;}
 
                         }
 
-                        li:last-child { 
-                            a { display: block; max-width: 148px; width: 100%;  text-align: center; color: $gray; font-family: $fonthead; text-transform: uppercase; font-size: 18px; text-decoration: none; border: 2px solid #703577; border-radius: 10px; padding: 8px 0px;}
+                        li { 
+                            input[type="submit"] { display: block; max-width: 148px; width: 100%;  text-align: center; color: $gray; font-family: $fonthead; text-transform: uppercase; font-size: 18px; text-decoration: none; border: 2px solid #703577; border-radius: 10px; padding: 8px 0px; background: #fff;}
                         }
                     }
                 }
@@ -727,7 +793,7 @@ background-color: $white;
 
 .contact {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -780,7 +846,7 @@ background-color: $white;
 
 .mv-values {  position: relative;
     
-    .sec-1 {     height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative;
+    .sec-1 {     height: 417px; position: relative;/* height: 416px; background-image: url(../images/banner-cmpny.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; */
 
         > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
 
@@ -897,7 +963,7 @@ footer { padding: 20px 35px; border-top: 1px solid #d4d4d4;
         }
 
         > li:nth-child(2) { width: 59%; text-align: center;
-            h5 { font-family: $fontnav; font-size: 14px; margin-bottom: 10px;}
+            h5 { font-family: $fontnav; font-size: 14px; margin-bottom: 10px; text-transform: capitalize;}
 
             > ul { list-style-type: none; padding: 0px;
                 li { width: 19.5%; float: left; vertical-align: text-top;     padding: 0px 15px;
@@ -908,7 +974,7 @@ footer { padding: 20px 35px; border-top: 1px solid #d4d4d4;
             }
         }
 
-        > li:last-child { border-right: 0px; padding-left: 25px;
+        > li:last-child { border-right: 0px; padding-left: 25px; width: 19%;
             a { display: block; font-family: $fontexl; text-decoration: none; color: $black; margin-bottom: 5px;}
 
             a:last-child { margin-bottom: 0px;}
@@ -936,4 +1002,43 @@ footer { padding: 20px 35px; border-top: 1px solid #d4d4d4;
         
         iframe { width: 100%; }
 
+}
+
+
+div.wpcf7-validation-errors { border: 0px!important; text-align: center; font-size: 17px;
+    font-family: "nunitoregular", Arial, sans-serif; color: #ff0000;}
+
+div.wpcf7-mail-sent-ok { border: 0px!important; text-align: center; font-size: 17px;
+    font-family: "nunitoregular", Arial, sans-serif; color: #398f14;}
+
+
+
+.glbl_slider { position: relative;
+    .owl-item {
+        > .item { 
+            > .img-hldr { height: 417px;
+                img { height: 100%; object-fit: cover;}
+            }
+
+            > .hero { position: absolute; top: 180px; max-width: 1024px; left: 50%; text-align: center; transform: translate(-50%, 0); width: 100%; padding: 0px 15px;
+
+            h3 { padding-bottom: 15px; position: relative; margin-bottom: 20px; font-family: $fonthead; color: $white; font-size: 30px; letter-spacing: 2px;}
+
+            h3::after { position: absolute; content: ''; bottom: 0px; width: 75px; height: 5px; background: #ff5e35; left: 50%; transform: translate(-50%, -50%);}
+
+            p { font-family: $fontexl; font-size: 20px; color: $white;}
+
+            }
+        }
+    }
+
+    .owl-nav { display: none;}
+    .owl-dots {     position: absolute; bottom: 20px; left: 50%; transform: translate(-50%, 0); 
+        .owl-dot{ display: inline-block; margin: 0px 5px;
+            span { height: 17px; width: 17px; border: 2px solid #fff; display: block; background: transparent;}
+        }
+        .owl-dot.active {
+            span { background: #fff;}
+        }
+    }
 }

@@ -17,6 +17,10 @@
 	.nav-custom .navbar-nav > li > a { font-size: 17px!important;}
 }
 
+@media only screen and (max-width: 1113px){
+	.whatsnew .sec-2 .wn-list > li div > article { width: 68%!important;}
+}
+
 
 @media only screen and (max-width: 1064px){
 	.nav-custom li { padding: 28px 9px 23px!important;}
@@ -28,6 +32,8 @@
 	.nav-custom .navbar-nav > li > a { font-size: 16px!important;}
 	.nav-custom .navbar-nav > li { padding: 23px 3px 8px!important}
 	.home .sec-2 > article .about-slider .owl-nav { top: 15%!important;}
+	.whatsnew .sec-2 .wn-list > li div > article { width: 65%!important;}
+
 }
 
 @media only screen and (max-width: 1003px){
@@ -60,20 +66,12 @@
     .nav-custom .navbar-nav > li:hover > a{ border: 0px!important;}
     .nav-custom .navbar-nav > li > a { border: 0px!important;}
     .dropdown-menu { position: relative!important; width: 100%!important; border: 0px!important; box-shadow: none!important; float: none!important; padding: 0px!important;} 
-    .dropdown-menu > li { padding: 15px 0px!important;}
+    .dropdown-menu > li { padding: 10px 0px!important; padding-left: 15px!important;}
     .dropdown-menu > li > a { text-align: left!important;}
+    .home .home-slider .owl-dots{ top: 45%!important;}
+    .dropdown-menu::after { display: none;}
 
-
-}
-
-@media only screen and (max-width: 960px){
-	  
-    
-    footer > ul > li:first-child aside { max-width: 120px!important;}
-    footer > ul > li:first-child { width: 18%!important}
     .breadcrmps { top: 20px!important;}
-
-
     .abt-company .sec-1 > .hero { top: 100px!important;}
     .abt-company-services .sec-1 > .hero { top: 100px!important;}
     .applicants .sec-1 > .hero { top: 100px!important;}
@@ -83,9 +81,23 @@
     .faq_page .sec-1 > .hero { top: 100px!important;}
     .contact_client .sec-1 > .hero { top: 100px!important;}
     .mv-values .sec-1 > .hero { top: 100px!important;}
+	.contact .sec-1 > .hero { top: 100px!important;}
+	.glbl_slider .owl-item > .item > .hero { top: 100px!important;}
+
+	.nav-custom .navbar-nav > li.dropdown { margin-left: -7px!important; }
+
+	.dropdown-menu > li:hover { background: transparent!important;}
+}
+
+@media only screen and (max-width: 960px){
+	  
+    
+    footer > ul > li:first-child aside { max-width: 120px!important;}
+    footer > ul > li:first-child { width: 18%!important}
+    
 
 
-    .abt-company-services .sec-2 ul > li { width: 33%!important; margin-bottom: 60px!important;}
+    .abt-company-services .sec-2 ul > li { width: 30%!important; margin-bottom: 60px!important; flex: none!important;     margin: 0px 5px!important; margin-bottom: 65px!important;}
     .abt-company-services .sec-2 ul > li article { padding: 0px 15px 30px!important;}
 
     .whatsnew .sec-2 article.ltst-nws { padding: 40px 0px!important;}
@@ -93,9 +105,14 @@
 
     .contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li { padding-left: 140px!important;}
 
-    .contact .sec-1 > .hero { top: 100px!important;}
+    
 
     .mv-values .sec-2 .values.padding-70 { padding: 0px!important;}
+
+    .whatsnew .sec-2 .wn-slider .owl-nav { right: 30px!important;}
+
+    .whatsnew .sec-2 .wn-list > li div > aside { max-width: 30%!important; margin-right: 0px!important;}
+
     
 
 }
@@ -125,7 +142,7 @@
 	.contact_client .sec-2 .cntct_dvider > article { width: 100%!important; float: none!important; padding-right: 0px!important; padding: 0px 15px!important; margin-bottom: 20px!important;}
 	.contact_client .sec-2 .cntct_dvider > aside { width: 100%!important; float: none!important; }
 
-	.contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li:last-child a { float: right;}
+	.contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li input[type="submit"] { float: right;}
 
 	.contact .sec-2 .cntct_dvider > article { width: 100%!important; float: none!important; padding: 0 15px!important;}
 	.contact .sec-2 .cntct_dvider > aside { width: 100%!important; float: none!important; padding: 0 15px!important;}
@@ -156,17 +173,21 @@
 	.mv-values .sec-2 .values .tabcontent figcaption { padding-right: 15px!important;}
 	.home .sec-2 > article div.slider-hldr > h3 { font-size: 30px!important;}
 	.home .sec-2 > article div.slider-hldr > h4  { font-size: 20px!important;}
+
+	.whatsnew .sec-2 .wn-list > li div > article h6 a{ font-size: 16px!important;}
+	.whatsnew .sec-2 .wn-list > li div > article{ float: none!important; max-width: 100%!important; width: 100%!important; }
+	.whatsnew .sec-2 .wn-list > li div > aside { float: none!important; margin-right: 0px!important; margin: 0 auto!important;     margin-bottom: 15px!important;}
 }	
 
-@media only screen and (max-width: 802px){
+/*@media only screen and (max-width: 802px){
 	.abt-company-services .sec-2 ul > li { width: 32%!important;}
 
-}
+}*/
 
 
 @media only screen and (max-width: 768px){
-	.abt-company-services .sec-2 ul > li { width: 49%!important;}
-	.whatsnew .sec-2 .wn-list > li div > aside { max-width: 250px!important; height: 175px!important; margin-right: 25px!important;}
+	.abt-company-services .sec-2 ul > li { width: 47%!important;}
+	.whatsnew .sec-2 .wn-list > li div > aside { height: 230px!important; max-width: 55%!important;}
 	.whatsnew .sec-2 article.ltst-nws > .box article { padding-bottom: 20px!important;}
 	.whatsnew .sec-2 article.ltst-nws > .box article p { font-size: 18px!important;}
 	.faq_page .sec-2 label { font-size: 18px!important;}
@@ -232,7 +253,10 @@
 	.home .sec-2 > article div.slider-hldr > h4  { font-size: 18px!important;}
 	.home .sec-2 > article .about-slider .owl-nav .owl-prev{ left: 30px!important;}
 	.home .sec-2 > article .about-slider .owl-nav .owl-next{ right: 30px!important;}
-	
+
+	.whatsnew .sec-2 .wn-slider .owl-nav { right: 20px!important;} 
+	.glbl_slider .owl-item > .item > .hero h3 { font-size: 25px!important}
+	.glbl_slider .owl-item > .item > .hero p { font-size: 18px!important;}
 
 }
 
@@ -275,6 +299,9 @@
 	.home .sec-2 > article .about-slider .owl-dots .owl-dot span { width: 15px; height: 15px; border-radius: 50%; background: transparent; border: 1px solid #fff;}
 	.home .sec-2 > article .about-slider .owl-dots .owl-dot.active span { background: #fff;}
 	.home .sec-2 > article div.slider-hldr { padding:30px 15px!important;}
+	.whatsnew .sec-2 .wn-list > li:first-child { padding-top: 0px!important;}
+
+	.home .home-slider .owl-dots{ top: 26%!important;}
 }
 
 @media only screen and (max-width: 550px){
@@ -285,12 +312,14 @@
 	.whatsnew .sec-2 article.ltst-nws > .box .next-btn {     position: relative!important; max-width: 100px; text-align: center; float: right;}
 	.whatsnew_single .sec-2 article .head_news div.right-head-news { float: none!important;}
 	.whatsnew_single .sec-2 article .head_news div.left-head-news { float: none!important;}
-	.contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li span { position: relative!important; top: 0px!important;}
+	.contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li h5 { position: relative!important; top: 0px!important; margin-bottom: 5px!important;}
 	.contact_client .sec-2 .cntct_dvider > aside .form-hldr > ul li { padding-left: 0px!important; }
 	.home .sec-2 > article div.slider-hldr > div > ul li { width: 100%!important; display: block!important; border-bottom: 1px solid #fff; padding: 10px 0px;}
 	.home .sec-2 > article div.slider-hldr > div > ul li:last-child { border-bottom: 0px!important;}
 	.home .sec-2 > article div.slider-hldr > div { padding: 0px!important}
 	.home .sec-2 > article div.slider-hldr > div > ul li:first-child::after { display: none!important}
+	.whatsnew .sec-2 article.ltst-nws { padding: 60px 0px 40px!important;}
+	.whatsnew .sec-2 .wn-slider .owl-nav { top: 10px!important; right: 0px!important;} 
 }
 
 @media only screen and (max-width: 480px){
@@ -299,7 +328,7 @@
 	.home .sec-2 > article > div > div { padding: 0px!important;}
 	.home .sec-2 > article > div > div > ul li:first-child { border-bottom: 1px solid #fff;}
 	.home .sec-2 > article > div { padding: 35px 15px!important}
-	.abt-company-services .sec-2 ul > li { width: 100%!important; padding: 0px!important;}
+	.abt-company-services .sec-2 ul > li { width: 100%!important; padding: 0px!important; margin: 0px!important;  margin-bottom: 65px!important;}
 	.abt-company-services .sec-2 ul > li:last-child { margin-bottom: 0px!important;}
 	.employees .sec-2 article p, .employees .sec-2 article a {font-size: 18px!important;}
 }
@@ -350,6 +379,9 @@
 	.mv-values .sec-2 .vision > article > p { margin-bottom: 20px!important; font-size: 16px!important;}
 	.mv-values .sec-2 .vision > article > p:last-of-type { margin-bottom: 0px!important;}
 	.mv-values .sec-2 .values .tab button { padding: 10px 0px!important;}
+	.whatsnew .sec-2 .wn-list > li div > aside { max-width: 100%!important;}
+	.glbl_slider .owl-item > .item > .hero h3{ margin-bottom: 7px!important;}
+	.glbl_slider .owl-item > .item > .hero p { font-size: 16px!important;}
 }
 
 @media only screen and (max-width: 391px){
@@ -359,7 +391,8 @@
 @media only screen and (max-width: 385px){
 	
 	.contact_client .sec-2 .cntct_dvider > article > ul li{ width: 100%!important; padding: 0px!important; margin-bottom: 20px!important;}
-
+	.home .home-slider .owl-dots { top: 1%!important;}
+	.home .home-slider .owl-dots .owl-dot { display: inline-block!important;}
 }
 
 @media only screen and (max-width: 357px){

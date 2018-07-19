@@ -137,24 +137,51 @@
                     </li>
                   </ul>
 
-                  <article class="ltst-nws">
-                    <div class="box clearfix">
-                      <aside>
-                        <img src="images/new.jpg">
-                      </aside>
-                      <div class="badge-ltst">
-                        <span>Latest News</span>
-                      </div>
-                      <article>
-                        <h4>APMC Leasing Opens New office in BGC</h4>
-                          <p>We are proud to announce that APMC Leasing has opened its first satellite office last February 6, 2017.</p>
-                      </article>
+
+                  <div class="owl-carousel owl-theme wn-slider">
+                    <div class="item clearfix">
+                      <article class="ltst-nws">
+                        <div class="box clearfix">
+                          <aside>
+                            <img src="images/new.jpg">
+                          </aside>
+                          <div class="badge-ltst">
+                            <span>Latest News</span>
+                          </div>
+                          <article>
+                            <h4>APMC Leasing Opens New office in BGC</h4>
+                              <p>We are proud to announce that APMC Leasing has opened its first satellite office last February 6, 2017.</p>
+                          </article>
                       
-                      <div class="next-btn">
-                        <a href="">Next <i class="fa fa-angle-right"></i>  </a>
-                      </div>
+                          <div class="next-btn">
+                            <a href="">Next <i class="fa fa-angle-right"></i>  </a>
+                          </div>
+                        </div>
+                      </article>
                     </div>
-                  </article>
+
+                    <div class="item clearfix">
+                      <article class="ltst-nws">
+                        <div class="box clearfix">
+                          <aside>
+                            <img src="images/new.jpg">
+                          </aside>
+                          <div class="badge-ltst">
+                            <span>Latest News</span>
+                          </div>
+                          <article>
+                            <h4>APMC Leasing Opens New office in BGC</h4>
+                              <p>We are proud to announce that APMC Leasing has opened its first satellite office last February 6, 2017.</p>
+                          </article>
+                      
+                          <div class="next-btn">
+                            <a href="">Next <i class="fa fa-angle-right"></i>  </a>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  
               </div>
 
 
@@ -217,7 +244,29 @@
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
-  
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.wn-slider').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:true,
+          navigationText: ["Next","Next>"],
+          responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+          }
+        });
+
+    });
+  </script>
 </body>
 
 </html>

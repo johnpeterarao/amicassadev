@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -83,8 +84,57 @@
 
       <div class="home">
 
-          <section class="carousel-bnnr">
-            <div class="owl-carousel owl-theme home-slider">
+          <section class="carousel-bnnr clearfix">
+              <aside>
+                    <!-- <div class="owl-carousel owl-theme home-slider">
+                      <div class="item clearfix">
+                        <div class="play-hldr">
+                          <a href="#video-banner" class="popup-with-form"><img src="images/play.png"></a>
+                        </div>
+                        <img src="images/carousel.jpg">
+                      </div>
+                      <div class="item clearfix">
+                        <div class="play-hldr">
+                          <a href="#video-banner" class="popup-with-form"><img src="images/play.png"></a>
+                        </div>
+                        <img src="images/carousel.jpg">
+                      </div>
+                      <div class="item clearfix">
+                        <div class="play-hldr">
+                          <a href="#video-banner" class="popup-with-form"><img src="images/play.png"></a>
+                        </div>
+                        <img src="images/carousel.jpg">
+                      </div>
+                    </div> -->
+
+                    <section class="home-slider slider">
+                      <div>
+                        <div class="item clearfix">
+                          <div class="play-hldr">
+                            <a href="#video-banner" class="popup-with-form"><img src="images/play.png"></a>
+                          </div>
+                          <img src="images/carousel.jpg">
+                        </div>
+                      </div>
+                      <div>
+                        <div class="item clearfix">
+                          <div class="play-hldr">
+                            <a href="#video-banner" class="popup-with-form"><img src="images/play.png"></a>
+                          </div>
+                          <img src="images/carousel.jpg">
+                        </div>
+                      </div>
+                      
+                    </section>
+              </aside>
+              <article>
+                    <div>
+                      <h2>Behind every great brand is exceptional quality and service.</h2>
+                      <h4><span>The partnership: Ayala Land, Amicassa, and You.</span> What we must do, we do our best to make it better for you - our team and our customers.</h4>
+                    </div>
+              </article>
+
+            <!-- <div class="owl-carousel owl-theme home-slider">
               <div class="item clearfix">
                   <aside>
                     <div class="play-hldr">
@@ -100,8 +150,9 @@
                     </div>
                   </article>
               </div>
+              
             
-            </div>
+            </div> -->
           </section>
 
           <section class="sec-2">
@@ -199,6 +250,7 @@
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/slick.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript">
 
@@ -208,7 +260,7 @@
         });
         
 
-        $('.home-slider').owlCarousel({
+        /*$('.home-slider').owlCarousel({
           loop:true,
           margin:10,
           nav:true,
@@ -223,11 +275,19 @@
               items:1
           }
           }
+        });*/
+
+        $('.home-slider').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
         });
 
         $('.about-slider').owlCarousel({
           loop:true,
           margin:10,
+
           nav:true,
           navText : ["01<span>About<br>Micasa</span>","02<span>Our<br>Services</span>"],
           responsive:{
